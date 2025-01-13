@@ -1,0 +1,156 @@
+.time-taken-container {
+  /* max-width: 900px; */
+  /* margin: 20px auto; */
+  padding: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  
+  .time-icon {
+    width: 24px;
+    height: 24px;
+    color: #9ca3af;
+  }
+  
+  .header h2 {
+    color: #9ca3af;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  .timeline-card {
+    background: white;
+    border-radius: 12px;
+    /* padding: 24px; */
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
+    }
+  
+  .timeline-section {
+    margin-bottom: 32px;
+  }
+  
+  .timeline-section:last-child {
+    margin-bottom: 0;
+  }
+  
+  .timeline {
+    position: relative;
+    height: 60px;
+    background: #f3f4f6;
+    border-radius: 4px;
+    margin: 20px 0;
+  }
+  
+  .tick-marks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .tick-group {
+    display: flex;
+    justify-content: space-between;
+    width: 11.11%;
+    padding: 8px 0;
+  }
+  
+  .tick {
+    width: 1px;
+    background-color: #818cf8;
+  }
+  
+  .tick.major {
+    height: 16px;
+  }
+  
+  .tick.minor {
+    height: 8px;
+    opacity: 0.5;
+  }
+  
+  .time-labels {
+    position: absolute;
+    bottom: 31px;
+    left: 18px;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 900;
+    color: #6b7280;
+  }
+  
+  .time-labels span {
+    transform: translateX(-50%);
+  }
+  
+  .progress-bars {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    height: 8px;
+  }
+  
+  .progress-bar {
+    position: absolute;
+    height: 100%;
+    border-radius: 4px;
+  }
+  
+  .progress-bar.red {
+    background-color: #ef4444;
+    /* margin-top: 4px;
+    height: 9px; */
+  }
+  
+  .progress-bar.green {
+    background-color: #22c55e;
+    /* height:12px;
+    margin-top:22px; */
+  }
+  
+  .center-marker {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 9px;
+    background-color: #818cf8;
+    z-index: 2;
+    opacity: 0.7;
+  }
+  
+  .timeline-description {
+    color: #9ca3af;
+    font-size: 14px;
+    margin: 12px 0 0 0;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 640px) {
+    .time-taken-container {
+      padding: 16px;
+    }
+    
+    .timeline-card {
+      padding: 16px;
+    }
+    
+    .time-labels {
+      font-size: 10px;
+    }
+  }
+  
+  
