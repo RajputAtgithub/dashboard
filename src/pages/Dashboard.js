@@ -82,7 +82,7 @@ function Dashboard () {
           <h3>Compare Accuracy</h3>
         </div>
       </CardComponent>
-            <CardComponent style={{width:'250px'}}>
+            <CardComponent style={{width:'232px'}}>
         <div style={{  flexDirection:'column',alignItems: 'center' ,width:'17vw'}}>
           <FaArrowUpRightDots style={{ fontSize: '24px', marginRight: '12px',color:'#9ca3af'  }} />
           <strong style={{color:'#9ca3af' }}>Improvements</strong>
